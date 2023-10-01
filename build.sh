@@ -1,7 +1,10 @@
 #!/bin/sh
 
-read -p "Enter Your Domain (example.com): " domain_name
-domain_name=${domain_name:-example.com}
+read -p "Enter Your Site URL (example.com): " site_url
+site_url=${site_url:-example.com}
+
+read -p "Enter Your API URL (api.example.com): " api_url
+api_url=${api_url:-api.example.com}
 
 read -p "Enter Site Name (My Portfolio): " site_name
 site_name=${site_name:-My Portfolio}
