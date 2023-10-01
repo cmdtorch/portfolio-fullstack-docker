@@ -24,7 +24,8 @@ google_analitycs=${google_analitycs:-G-XXXXXXXXXX}
 git clone "https://github.com/cmdtorch/portfolio_api" portfolio_api
 git clone "https://github.com/ilgarabdullazade/nuxt3-my-portfolio" portfolio_front
 
-sed -i "s/example.com/${domain_name}/g" docker-compose.yml
+sed -i "s/example.com/${site_url}/g" docker-compose.yml
+sed -i "s/api.example.com/${api_url}/g" docker-compose.yml
 sed -i "s/My Portfolio/${site_name}/g" docker-compose.yml
 sed -i "s/Alex/${first_name}/g" docker-compose.yml
 sed -i "s/Smith/${last_name}/g" docker-compose.yml
