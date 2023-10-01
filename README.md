@@ -14,7 +14,7 @@ This is a docker full-stack package for my portfolio application.
 
 ### Clone repository
 ```bash
-$ git clone https://github.com/cmdtorch/portfolio_api
+$ git clone https://github.com/cmdtorch/portfolio-fullstack-docker
 ```
 
 ### Run build.sh file 
