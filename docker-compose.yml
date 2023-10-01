@@ -15,10 +15,10 @@ services:
       - traefik.enable=true
       - traefik.http.services.portfolio_api.loadbalancer.server.port=80
       - traefik.http.routers.app-http_portfolio_api.entrypoints=http
-      - traefik.http.routers.app-http_portfolio_api.rule=Host(`example.com`)
+      - traefik.http.routers.app-http_portfolio_api.rule=Host(`api.example.com`)
       - traefik.docker.network=web
       - traefik.http.routers.app-https_portfolio_api.entrypoints=https
-      - traefik.http.routers.app-https_portfolio_api.rule=Host(`example.com`)
+      - traefik.http.routers.app-https_portfolio_api.rule=Host(`api.example.com`)
       - traefik.http.routers.app-https_portfolio_api.tls=true
       - traefik.http.routers.app-https_portfolio_api.tls.certresolver=le
       - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
